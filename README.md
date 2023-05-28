@@ -1,6 +1,6 @@
 # jupyros-widgets
 
-Implemention of jupyros
+Implemention of jupyros widgets highly inspired from [jupyros](https://github.com/RoboStack/jupyter-ros).
 
 ## Installation
 

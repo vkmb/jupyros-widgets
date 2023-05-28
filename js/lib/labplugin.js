@@ -1,17 +1,18 @@
-import {HelloModel, HelloView, version} from './index';
+import * as ROSWidgets from './index';
+import {version} from '../package.json';
 import {IJupyterWidgetRegistry} from '@jupyter-widgets/base';
 
-export const helloWidgetPlugin = {
+export const rosWidgetPlugin = {
   id: 'jupyros-widgets:plugin',
   requires: [IJupyterWidgetRegistry],
   activate: function(app, widgets) {
       widgets.registerWidget({
           name: 'jupyros-widgets',
           version: version,
-          exports: { HelloModel, HelloView }
+          exports: ROSWidgets
       });
   },
   autoStart: true
 };
 
-export default helloWidgetPlugin;
+export default rosWidgetPlugin;
